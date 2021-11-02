@@ -1,2 +1,5 @@
+from users.views import SignInApi, SignUpApi
+
 def initialize_routes(api):
-    return None
+    api.add_resource(SignUpApi, '/users/signup')
+    api.add_resource(SignInApi, '/users/signin')
