@@ -2,7 +2,7 @@ import datetime
 
 from flask_bcrypt import generate_password_hash, check_password_hash
 
-from run          import db
+from database.db import db
 
 class User(db.Document):
     email      = db.StringField(required=True, unique=True)
