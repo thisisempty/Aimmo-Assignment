@@ -94,36 +94,21 @@ curl --location --request POST 'http://127.0.0.1:5000/post' \
 ```GET/post/<post_id>?search-word="검색어"``` 
   - 검색어에 해당하는 게시글 반환
   - 주어진 조건에 해당하는 게시글 목록 조회
+  - 게시물 읽힘수 적용
+  - 페이지네이션 적용
   
 ### Response
 ```
 [
-  {
-    "category": "제목1",
-    "title": "post1",
-    "body": "content1",
-    "user": "juju@naver.com",
-    "read_user": 0,
-    "updated_at": "2021-11-02 11:08:48.993000"
-  }
+    {
+        "category": "제목1",
+        "title": "post1",
+        "body": "content1",
+        "user": "juju@naver.com",
+        "read_user": 0,
+        "updated_at": "2021-11-02 11:08:48.993000"
+    }
 ]
-```
-
-### 3. 게시글 상세 조회
-```GET/post/<post_id>```
-  - post_id에 해당하는 게시글 조회
-  - 게시물 읽힘수 적용
-
-### Response
-```
-{
-  "category": "제목1",
-  "title": "title1",
-  "body": "content1",
-  "user": "newhyun@naver.com",
-  "read_user": 1,
-  "updated_at": "2021-11-02 21:00:42.075000"
-}
 ```
 ### 4. 게시글 수정
 ```PUT/post/<post_id>```
