@@ -45,6 +45,7 @@ curl --location --request POST 'http://127.0.0.1:5000/users/signup' \
   - 로그인을 통해 JWT Token 생성
   - 같은 이메일 유저 로그인 불가
   - 로그인/회원가입 unit test 완료
+  
 ### Request
 ```
 curl --location --request GET 'http://127.0.0.1:5000/users/signin' \
@@ -243,7 +244,7 @@ curl --location --request POST 'http://127.0.0.1:5000/reply' \
 ```
 
 ### 6. 대댓글 삭제
-```DELETE/reply/<comment_id>
+```DELETE/reply/<comment_id>```
   - jwt_required로 유저확인
   - user_id와 댓글을 쓴 유저가 같은지 확인 후 통과시 삭제
 
