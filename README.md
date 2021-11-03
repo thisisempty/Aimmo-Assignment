@@ -110,12 +110,12 @@ curl --location --request POST 'http://127.0.0.1:5000/post' \
     }
 ]
 ```
-### 4. 게시글 수정
+### 3. 게시글 수정
 ```PUT/post/<post_id>```
   - jwt_required에서 받은 user와 게시글 작성자의 user_id와 비교하여 다르면 error 반환
   - post_id, user_id가 올바르면 body에서 받은 정보를 기반으로 수정
 
-### Response
+### Request
 
 ```
 curl --location --request PUT 'http://127.0.0.1:5000/post/6181a9b968bb29d23b840bdf' \
@@ -126,7 +126,14 @@ curl --location --request PUT 'http://127.0.0.1:5000/post/6181a9b968bb29d23b840b
 }'
 ```
 
-### 5. 게시글 삭제
+### Response
+```
+{
+  "message": "SUCCESS"
+}
+```
+
+### 4. 게시글 삭제
 ```DELETE/post/<post_id>```
   - post_id에 해당하는 게시글이 존재하지 않으면 POST-DOES-NOT-EXIST error 반환
   - post_id,user_id가 올바르면 게시글 삭제
