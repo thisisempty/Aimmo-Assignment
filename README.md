@@ -90,7 +90,7 @@ curl --location --request POST 'http://127.0.0.1:5000/post' \
 ```
 
 ### 2. 게시글 목록 조회
-```GET/post/<post_id>?search-word="검색어" 
+```GET/post/<post_id>?search-word="검색어"``` 
   - 검색어에 해당하는 게시글 반환
   - 주어진 조건에 해당하는 게시글 목록 조회
   
