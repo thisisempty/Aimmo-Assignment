@@ -2,12 +2,14 @@
 
 - 팀명 : 1팀 - 쿠티드프리온보딩
 
+## 배포
+```http://3.36.66.16:5000```
+
 ## 팀 역할분배
 
 - 구본욱 : 게시글 CRUD 
 - 이다빈 : 로그인/회원가입, 배포
 - 김주현 : 댓글,대댓글 
-
 
 ## 적용기술
 - python, flask, mongodb, JWT, bcrypt, AWS EC2, atlas
@@ -244,5 +246,7 @@ curl --location --request POST 'http://127.0.0.1:5000/reply' \
 
 ## API Documents 
 
-주소 : https://documenter.getpostman.com/view/17922648/UVBznUqp
+```https://documenter.getpostman.com/view/17922648/UVBznUqp```
+
+
 
