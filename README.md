@@ -12,7 +12,7 @@
 - 김주현 : 댓글,대댓글 
 
 ## 적용기술
-- python, flask, mongodb, JWT, bcrypt, AWS EC2, atlas
+- python, flask, mongodb, JWT, bcrypt, AWS EC2
 
 ## 구현 방법 및 기능
 - python언어를 기반으로 Flask Framework를 활용한 게시판 Restfull API 구현하기
